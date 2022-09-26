@@ -58,16 +58,7 @@ header {
 
 .navbar_links li a{
     padding: 8px 15px;
-
-    border: none;
-    border-radius: 2px;
-    background-color: rgba(254, 70, 70, 0.181);
-
-    transition: all 0.4s ease 0s;
-}
-
-.navbar_links li a:hover{
-    background-color: rgb(209, 56, 56);
+    font-size: 1rem;
 }
 
 .main{
@@ -86,30 +77,68 @@ header {
 
     padding: 10px;
     margin: 10px;
-
-    border: none;
-    border-radius: 2px;
-    background-color: rgba(254, 70, 70, 0.181);
-
-    transition: all 0.4s ease 0s;
-}
-
-.main li:hover{
-    background-color: rgb(209, 56, 56);
 }
 
 #clicker{
     padding: 10px;
     margin-bottom: 10px;
+}
 
+.button{
     border: none;
+    box-shadow: 0 0 0px rgb(209, 56, 56);
+
     border-radius: 2px;
     background-color: rgba(254, 70, 70, 0.181);
 
     transition: all 0.4s ease 0s;
 }
 
-#clicker:hover{
+.button:hover{
+    box-shadow: 0 0 25px rgb(209, 56, 56);
+
     background-color: rgb(209, 56, 56);
     cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    .logo{
+        font-size: 42px;
+    }
+
+    .navbar_links li{
+        display:inline-block;
+        padding: 0px 15px;
+    }
+
+    .navbar_links li a{
+        padding: 8px 15px;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        font-size: 24px;
+    }
+
+    .navbar_links li{
+        display:inline-block;
+        padding: 4px;
+    }
+
+    .navbar_links li a{
+        padding: 4px 5px;
+        font-size: 0.75rem;
+    }
+
+    header {
+        padding: 5px 5px;
+    }
 }
