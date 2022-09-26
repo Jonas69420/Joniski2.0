@@ -1,4 +1,5 @@
 import os
+from replit import db
 from flask import Flask,  render_template
 
 def create_app():
@@ -9,7 +10,8 @@ def create_app():
 
     @app.route("/")
     def main():
-        return render_template("main.html");
+        db["clicks"] = db["clicks"] + 1
+        return render_template("main.html", clicks=db["clicks"]);
 
     @app.route("/downloads")
     def downloads():
