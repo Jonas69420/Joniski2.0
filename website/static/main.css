@@ -67,7 +67,7 @@ header {
     height: 3rem;
 
     filter: grayscale(100%) opacity(1);
-    transition: all 0.4s ease 0s;
+    transition: transform 0.4s cubic-bezier(0.47, 0.23, 0.23, 1.6) 0s;
 }
 
 .navbar_links li a img:hover{
