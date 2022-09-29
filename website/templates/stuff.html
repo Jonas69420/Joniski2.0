@@ -2,6 +2,14 @@
 
 {% block content %}
 <ul class="main">
-    Stuff
+    <div id="clicker-button" class="disable-select">
+        <img src="{{url_for('static', filename='thebigjround.png')}}" alt="">
+    </div>
+
+    <div id="clicker-counter" class="disable-select">
+        0
+    </div>
+  
+    <script src= "{{url_for('static', filename='clicker.js')}}"></script>
 </ul>
 {% endblock %}
